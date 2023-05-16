@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+        <title>Portafolio</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <!-- MENU ENCABEZADO -->
+        <div class="contenedor-header">
+            <header>
+                <div class="logo">
+                    <a href="#">Marco</a>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                        <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                        <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                        <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                        <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                        <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </header>
+        </div>
+
+        <!-- SECCION INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-banner">
+                <div class="contenedor-img">
+                    <img src="img/fotoMia.png" alt="Fotografía">
+                </div>
+                <h1>Marco Diaz</h1>
+                <h2>Front-End</h2>
+                <div class="redes">
+                    <a href="https://www.facebook.com/profile.php?id=100015640921378"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=56994060513&text=Quiero%20contratarte!!"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://instagram.com/__ddam_?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/marco-antonio-diaz-duran-928860276/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/settings/keys"><i class="fa-solid fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION SOBRE MI -->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Marco Diaz.</span>
+                    Soy una persona organizada, disciplinada, esforzada y precisa.
+                    Me gusta aprender y evaluar los hechos de una forma
+                    lógica. Me enfrento a los problemas de una manera
+                    analítica para poder entender las verdaderas causas y
+                    así poder prevenirlos a futuro.
+                </p>
+
+                <p>
+                    Soy un profesional especializado en la creación y mantenimiento de 
+                    la interfaz de usuario de sitios web y aplicaciones. Mi objetivo 
+                    principal es traducir el diseño y la estructura visual de un producto
+                    digital en código HTML, CSS y JavaScript, para que los usuarios puedan 
+                    interactuar de manera efectiva y atractiva con la plataforma.
+                </p>
+
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                07-02-2000
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                994060513
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                marcodiaz.da@gmail.com
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Baquedano #741, El Monte, Chile
+                            </li>
+                            <li>
+                                <strong>Cargo</strong>
+                                <span>FRONT-END DEVELOPER</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- intereses -->
+                    <div class="col" style="text-align: center; margin: 0 auto;">
+                        
+                        <h3>Intereses</h3>
+                        
+                        
+                        <table>
+                            <tr>
+                            <td>
+                                <i class="fa-solid fa-gamepad"></i>
+                                <br>
+                                JUEGOS
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-headphones"></i>
+                                <br>
+                                MUSICA
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-plane"></i>
+                                <br>
+                                VIAJAR
+                            </td>
+                            <td>
+                                <i class="fa-brands fa-windows"></i>
+                                <br>
+                                WINDOWS
+                            </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <i class="fa-solid fa-person-hiking"></i>
+                                <br>
+                                DEPORTE
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-book"></i>
+                                <br>
+                                LIBROS
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-car"></i>
+                                <br>
+                                AUTOS
+                            </td>
+                            <td>
+                                <i class="fa-solid fa-camera"></i>
+                                <br>
+                                FOTOS
+                            </td>
+                            </tr>
+                        </table>
+                        
+                    </div>  
+                </div>
+                
+                
+                <a href="pdf/Curriculum_Marco_Antonio_Diaz_Duran.pdf" download="curriculum">
+                    <button>Descargar CV</button>
+                    <span class="overlay"></span>
+                </a>
+                
+                <!--Descargar CV <i class="fa-solid fa-download"></i> -->
+                
+                
+            </div>
+        </section>
+
+        <!-- SECCION SKILLS -->
+        <section class="skills" id="skills">
+            <div class="contenido-seccion">
+                <h2>Skills</h2>
+                <div class="fila">
+                    <!-- Technical Skill -->
+                    <div class="col">
+                        <h3>Technical Skills</h3>
+                        <div class="skill">
+                            <span>Javascript</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>75%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>HTML & CSS</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>89%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Photoshop</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>95%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Wordpress</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>81%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Drupa</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>55%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Professional Skills -->
+                    <div class="col">
+                        <h3>Professional Skills</h3>
+                        <div class="skill">
+                            <span>Comunicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>80%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Trabajo en Equipo</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>70%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Creatividad</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>99%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Dedicación</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>65%</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Proyect Management</span>
+                            <div class="barra-skill">
+                                <div class="progreso">
+                                    <span>94%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CURRICULUM -->
+        <section id="curriculum" class="curriculum">
+            <div class="contenido-seccion">
+                <h2>Curriculum</h2>
+                <div class="fila">
+                    <div class="col izquierda">
+                        <h3>Educación</h3>
+                        <div class="item izq">
+                            <h4>Ingenieria en informatica</h4>
+                            <span class="casa">IP/CST SANTO TOMAS</span>
+                            <span class="fecha">2010 - 2014</span>
+                            <p> la ingeniería en informática se enfoca en la 
+                                aplicación de principios y técnicas de ingeniería
+                                para desarrollar soluciones informáticas eficientes, 
+                                robustas y de alta calidad, abordando los desafíos y 
+                                demandas de la sociedad en la era digital.
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Grado en Diseño y Desarrollo Web</h4>
+                            <span class="casa">Universidad de Chile</span>
+                            <span class="fecha">2015 - 2018</span>
+                            <p> Este programa combina aspectos del diseño visual, 
+                                la experiencia de usuario, la programación y la gestión 
+                                de proyectos para formar a los estudiantes en la creación 
+                                de interfaces de usuario atractivas y funcionales.
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                        <div class="item izq">
+                            <h4>Cursos técnico de programacion web</h4>
+                            <span class="casa">Duoc UC</span>
+                            <span class="fecha">2019 - 2021</span>
+                            <p> En el curso técnico de programación web es una opción 
+                                educativa más corta y específica que brinda capacitación
+                                práctica en el desarrollo de sitios web y aplicaciones. Estos 
+                                cursos están diseñados para proporcionar a los estudiantes las 
+                                habilidades y conocimientos necesarios para convertirse en programadores 
+                                web competentes en un período de tiempo relativamente corto.
+                            </p>
+                            <div class="conectori">
+                                <div class="circuloi"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col derecha">
+                        <h3>Experiencia de trabajo</h3>
+                        <div class="item der">
+                            <h4>Desarrollo de interfaces de usuario</h4>
+                            <span class="casa">Facebook</span>
+                            <span class="fecha">2022</span>
+                            <p>Los desarrolladores front-end son responsables 
+                                de convertir los diseños y las especificaciones 
+                                de diseño en interfaces de usuario funcionales utilizando
+                                lenguajes de marcado como HTML, CSS y JavaScript. Esto implica 
+                                la creación de estructuras HTML semánticas, la implementación de 
+                                estilos de diseño con CSS y la mejora de la interactividad y la
+                                funcionalidad con JavaScript.
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Desarrollo de aplicaciones web</h4>
+                            <span class="casa">Google</span>
+                            <span class="fecha">2022</span>
+                            <p>Los desarrolladores front-end trabajan 
+                                en la construcción de aplicaciones web 
+                                interactivas y responsivas. Utilizan frameworks 
+                                y bibliotecas como React, Angular o Vue.js para
+                                desarrollar componentes reutilizables, administrar 
+                                el estado de la aplicación y mejorar la experiencia 
+                                del usuario.
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                        <div class="item der">
+                            <h4>Optimización del rendimiento</h4>
+                            <span class="casa">Microsoft</span>
+                            <span class="fecha">2023</span>
+                            <p> Los desarrolladores front-end se preocupan
+                                por la optimización del rendimiento de las
+                                aplicaciones y sitios web. Implementan técnicas
+                                de carga rápida, compresión de archivos, caché 
+                                y optimización de recursos para mejorar la velocidad 
+                                y la eficiencia del sitio web.
+                            </p>
+                            <div class="conectord">
+                                <div class="circulod"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION PORTFOLIO -->
+        <section id="portfolio" class="portfolio">
+            <div class="contenido-seccion">
+                <h2>PORTFOLIO</h2>
+                <div class="galeria">
+                    <div class="proyecto">
+                        <img src="https://i.imgur.com/bmrUvoC.png" width="500"  height="250" alt="gato">
+                        <div class="overlay">
+                            <h3>Gato Programador</h3>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="https://i.imgur.com/zYWJClj.png" width="500"  height="250" alt="codigo">
+                        <div class="overlay">
+                            <h3>Solo dios sabe</h3>
+                        </div>
+                    </div>
+                    <div class="proyecto">
+                        <img src="img/copo.jpeg" width="500"  height="250" alt="copo">
+                        <div class="overlay">
+                            <h3>Copito</h3>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <div class="contenido-seccion">
+                <h2>CONTACTO</h2>
+                <div class="fila">
+                    <!-- Formulario -->
+                    <div class="col">
+                        <input type="text" placeholder="Tú Nombre">
+                        <input type="text" placeholder="Número telefónico">
+                        <input type="text" placeholder="Dirección de correo">
+                        <input type="text" placeholder="Tema">
+                        <textarea name="menssage" id="menssage" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <button>
+                            Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+                    </div>
+                    <!-- Mapa -->
+                    <div class="col">
+                        <img src="img/mapa.png" alt="">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    Baquedano #741, El Monte, Chile
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                    Llamame: 994060513
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-envelope"></i>
+                                    Email: marcodiaz.da@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <a href="#inicio" class="arriba">
+                <i class="fa-solid fa-angles-up"></i>
+            </a>
+            <div class="redes">
+                <a href="https://www.facebook.com/profile.php?id=100015640921378"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=56994060513&text=Quiero%20contratarte!!"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://instagram.com/__ddam_?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/marco-antonio-diaz-duran-928860276/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/settings/keys"><i class="fa-solid fa-github"></i></a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
